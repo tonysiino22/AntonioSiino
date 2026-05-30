@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antonio Siino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- LANGUAGE SELECTION OVERLAY -->
+  <div id="lang-overlay" class="lang-overlay">
+    <div class="lang-overlay-inner">
+      <div class="lang-logo">AS</div>
+      <p class="lang-tagline" id="lang-tagline">Choose your language / Sprache wählen</p>
+      <div class="lang-buttons">
+        <button class="lang-btn" onclick="setLanguage('en')">
+
+          <span>English</span>
+        </button>
+        <button class="lang-btn" onclick="setLanguage('de')">
+  
+          <span>Deutsch</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-logo" href="#home" onclick="scrollTo('home')">AS</a>
+    <ul class="nav-links">
+      <li><a href="#home"    onclick="scrollTo('home')"    data-de="Einführung"   data-en="Introduction">Introduction</a></li>
+      <li><a href="#journey" onclick="scrollTo('journey')" data-de="Tech Journey" data-en="Tech Journey">Tech Journey</a></li>
+      <li><a href="#lifestyle" onclick="scrollTo('lifestyle')" data-de="Lifestyle" data-en="Lifestyle">Lifestyle</a></li>
+      <li><a href="#contact" onclick="scrollTo('contact')" data-de="Kontakt"      data-en="Contact">Contact</a></li>
+    </ul>
+    <button class="lang-toggle" id="lang-toggle">DE / EN</button>
+  </nav>
+
+  <!-- PAGE: HOME / INTRODUCTION -->
+  <section class="page page-home" id="home">
+    <div class="home-content">
+      <div class="home-text">
+        <p class="home-eyebrow" data-de="Software Engineering &amp; KI" data-en="Software Engineering &amp; AI">Software Engineering &amp; AI</p>
+        <h1 class="home-name">Antonio <span class="name-accent">Siino</span></h1>
+        <p class="home-aka" data-de="Auch bekannt als Tony" data-en="Also known as Tony">Also known as Tony</p>
+        <p class="home-bio" data-en="I am a student at the Informatik Mittelschule Baden, specialising in software engineering and the strategic application of generative AI technologies. My focus is on leveraging cutting-edge tools to optimise development workflows, accelerate research, and build solutions that are as intelligent as they are efficient." data-de="Ich bin Schüler an der Informatik Mittelschule Baden, mit einer Spezialisierung in Software Engineering und der strategischen Anwendung generativer KI-Technologien. Mein Schwerpunkt liegt darin, modernste Tools einzusetzen, um Entwicklungs-Workflows zu optimieren, Recherchen zu beschleunigen und Lösungen zu entwickeln, die ebenso intelligent wie effizient sind.">
+          I am a student at the Informatik Mittelschule Baden, specialising in software engineering and the strategic application of generative AI technologies. My focus is on leveraging cutting-edge tools to optimise development workflows, accelerate research, and build solutions that are as intelligent as they are efficient.
+        </p>
+        <div class="home-cta">
+          <a class="btn-primary" href="#journey" onclick="scrollTo('journey')" data-de="Meine Geschichte" data-en="My Story">My Story</a>
+          <a class="btn-secondary" href="#contact" onclick="scrollTo('contact')" data-de="Kontakt aufnehmen" data-en="Get in Touch">Get in Touch</a>
+        </div>
+      </div>
+      <div class="home-image-wrap">
+        <div class="home-image-frame">
+          <img src="images/antonio-profile.png" alt="Antonio Siino" class="home-portrait" />
+        </div>
+        <div class="home-image-deco"></div>
+      </div>
+    </div>
+    <div class="scroll-indicator" onclick="scrollTo('journey')">
+      <span data-de="Mehr erfahren" data-en="Scroll down">Scroll down</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- PAGE: TECH JOURNEY -->
+  <section class="page page-journey" id="journey">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 data-de="Meine Tech-Reise" data-en="My Tech Journey">My Tech Journey</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="journey-grid">
+        <div class="journey-block">
+          <div class="journey-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M13 20l5 5 9-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-de="Die frühen Jahre" data-en="The Early Years">The Early Years</h3>
+          <p data-en="From an early age, technology held an almost magnetic fascination for me. Long before I could articulate what a computer actually was, I was instinctively drawn to screens, devices, and everything electronic. I spent hours experimenting on my parents' phones and computers, driven by a relentless curiosity about how these machines functioned beneath the surface. Platforms like Scratch were among my first encounters with the logic of programming, and building my first rudimentary websites ignited something that has never quite gone out." data-de="Von frühester Kindheit an übte Technologie eine nahezu magnetische Faszination auf mich aus. Lange bevor ich erklären konnte, was ein Computer überhaupt ist, zog es mich instinktiv zu Bildschirmen, Geräten und allem Elektronischen hin. Ich verbrachte Stunden damit, auf den Handys und Computern meiner Eltern herumzuprobieren, angetrieben von einer unstillbaren Neugier darüber, wie diese Maschinen unter der Oberfläche funktionieren. Plattformen wie Scratch gehörten zu meinen ersten Begegnungen mit der Logik des Programmierens, und das Erstellen meiner ersten rudimentären Websites entfachte etwas, das seither nie erloschen ist.">
+            From an early age, technology held an almost magnetic fascination for me. Long before I could articulate what a computer actually was, I was instinctively drawn to screens, devices, and everything electronic. I spent hours experimenting on my parents' phones and computers, driven by a relentless curiosity about how these machines functioned beneath the surface. Platforms like Scratch were among my first encounters with the logic of programming, and building my first rudimentary websites ignited something that has never quite gone out.
+          </p>
+        </div>
+
+        <div class="journey-block">
+          <div class="journey-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M14 26l6-12 6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16.5 22h7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-de="Die Entscheidung" data-en="The Decision">The Decision</h3>
+          <p data-en="When the time came to decide my path after completing the Oberstufe, there was no hesitation. Computer science was not merely a sensible career option; it was the only direction that felt genuinely right. I enrolled at the Informatik Mittelschule Baden, where I have been channelling my passion into a rigorous academic curriculum. The school has provided me with a robust foundation in software engineering principles and the intellectual environment to explore what truly interests me most." data-de="Als es darum ging, meinen Weg nach der Oberstufe zu wählen, gab es kein Zögern. Informatik war nicht bloss eine vernünftige Berufsoption; es war die einzige Richtung, die sich wirklich richtig anfühlte. Ich schrieb mich an der Informatik Mittelschule Baden ein, wo ich meine Leidenschaft in einen anspruchsvollen Lehrplan einbringe. Die Schule hat mir eine solide Grundlage in den Prinzipien des Software Engineerings und ein intellektuelles Umfeld geboten, um das zu erforschen, was mich wirklich am meisten fasziniert.">
+            When the time came to decide my path after completing the Oberstufe, there was no hesitation. Computer science was not merely a sensible career option; it was the only direction that felt genuinely right. I enrolled at the Informatik Mittelschule Baden, where I have been channelling my passion into a rigorous academic curriculum. The school has provided me with a robust foundation in software engineering principles and the intellectual environment to explore what truly interests me most.
+          </p>
+        </div>
+
+        <div class="journey-block journey-block-wide">
+          <div class="journey-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M15 20h10M20 15v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-de="Interessen und Ausblick" data-en="Interests &amp; Outlook">Interests &amp; Outlook</h3>
+          <p data-en="My primary interests lie at the intersection of artificial intelligence and software engineering, particularly in the development of innovative, technology-driven solutions that address real-world challenges. I am especially drawn to the transformative potential of generative AI, not as a novelty, but as a serious instrument for building smarter workflows, enhancing developer productivity, and redefining what is possible in problem-solving. Every project I undertake is an opportunity to push that boundary a little further." data-de="Meine primären Interessen liegen an der Schnittstelle von künstlicher Intelligenz und Software Engineering, insbesondere bei der Entwicklung innovativer, technologiegetriebener Lösungen, die reale Herausforderungen adressieren. Ich bin besonders fasziniert vom transformativen Potenzial generativer KI, nicht als Neuheit, sondern als ernsthaftes Instrument zum Aufbau intelligenterer Workflows, zur Steigerung der Entwicklerproduktivität und zur Neudefinition des Möglichen in der Problemlösung. Jedes Projekt, das ich angehe, ist eine Gelegenheit, diese Grenze ein Stück weiter zu verschieben.">
+            My primary interests lie at the intersection of artificial intelligence and software engineering, particularly in the development of innovative, technology-driven solutions that address real-world challenges. I am especially drawn to the transformative potential of generative AI, not as a novelty, but as a serious instrument for building smarter workflows, enhancing developer productivity, and redefining what is possible in problem-solving. Every project I undertake is an opportunity to push that boundary a little further.
+          </p>
+          <a class="btn-outline-dark" href="https://github.com/tonysiino22" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.912.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.742 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            <span data-de="Projekte auf GitHub ansehen" data-en="View Projects on GitHub">View Projects on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: LIFESTYLE -->
+  <section class="page page-lifestyle" id="lifestyle">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 data-de="Lifestyle" data-en="Lifestyle">Lifestyle</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- SPORTS / FITNESS BLOCK -->
+      <div class="lifestyle-block lifestyle-block-sports">
+        <div class="lifestyle-text">
+          <h3 data-de="Sport ist mein Leben" data-en="Sport Is My Life">Sport Is My Life</h3>
+          <p data-en="Sport is not simply a pastime for me; it is a fundamental part of who I am. I run, swim, lift weights, and practise calisthenics, pushing my body to its limits on a consistent basis. There is something deeply compelling about testing what the human body can endure and exceed. I am drawn to the discipline, the discomfort, and the incremental progress that serious athletic training demands. I harbour a number of ambitious projects and aspirations in the realm of sport, with a particular focus on endurance disciplines. The mental fortitude that endurance sports cultivate is, in many ways, just as valuable to me as the physical conditioning." data-de="Sport ist für mich nicht bloss eine Freizeitbeschäftigung; er ist ein grundlegender Teil meiner Persönlichkeit. Ich laufe, schwimme, hebe Gewichte und betreibe Kalisthenics, wobei ich meinen Körper konsequent an seine Grenzen bringe. Es fasziniert mich zutiefst, zu testen, was der menschliche Körper aushalten und überwinden kann. Ich werde von der Disziplin, dem Unbehagen und dem schrittweisen Fortschritt angezogen, den ernsthaftes athletisches Training erfordert. Ich hege eine Reihe ambitionierter Projekte und Ziele im Bereich Sport, mit einem besonderen Fokus auf Ausdauerdisziplinen. Die mentale Stärke, die Ausdauersport aufbaut, ist für mich in vielerlei Hinsicht genauso wertvoll wie die körperliche Konditionierung.">
+            Sport is not simply a pastime for me; it is a fundamental part of who I am. I run, swim, lift weights, and practise calisthenics, pushing my body to its limits on a consistent basis. There is something deeply compelling about testing what the human body can endure and exceed. I am drawn to the discipline, the discomfort, and the incremental progress that serious athletic training demands. I harbour a number of ambitious projects and aspirations in the realm of sport, with a particular focus on endurance disciplines. The mental fortitude that endurance sports cultivate is, in many ways, just as valuable to me as the physical conditioning.
+          </p>
+          <div class="sport-tags">
+            <span data-de="Laufen" data-en="Running">Running</span>
+            <span data-de="Schwimmen" data-en="Swimming">Swimming</span>
+            <span data-de="Gewichtheben" data-en="Weightlifting">Weightlifting</span>
+            <span data-de="Kalisthenics" data-en="Calisthenics">Calisthenics</span>
+          </div>
+        </div>
+        <div class="lifestyle-image-wrap">
+          <img src="images/antonio-beach.jpg" alt="Antonio at the beach" class="lifestyle-img" />
+          <div class="lifestyle-img-overlay"></div>
+        </div>
+      </div>
+
+      <!-- BOXING BLOCK -->
+      <div class="lifestyle-block lifestyle-block-boxing">
+        <div class="lifestyle-image-wrap">
+          <img src="images/antonio-boxing.jpg" alt="Antonio boxing" class="lifestyle-img" />
+          <div class="lifestyle-img-overlay"></div>
+        </div>
+        <div class="lifestyle-text">
+          <h3 data-de="Kampfsport und Wettkampf" data-en="Combat Sport &amp; Competition">Combat Sport &amp; Competition</h3>
+          <p data-en="For several years, I competed in amateur boxing at a high level. I participated in the Swiss Championship and the Deutsch-Tessiner Championship, representing team Boxgemeinschaft Ostschweiz, with whom I experienced the notable achievement of defeating team Vorarlberg from Austria at the Bodenseecup 2023. Boxing at a competitive level demands far more than physical ability; it requires tactical acuity, psychological resilience, and an uncompromising work ethic, qualities that extend far beyond the ring." data-de="Mehrere Jahre lang boxte ich auf hohem Niveau im Amateurbereich. Ich nahm an der Schweizer Meisterschaft und der Deutsch-Tessiner Meisterschaft teil und vertrat das Team Boxgemeinschaft Ostschweiz, mit dem ich den bemerkenswerten Erfolg erzielte, beim Bodenseecup 2023 das Team Vorarlberg aus Österreich zu besiegen. Boxen auf Wettkampfniveau erfordert weit mehr als körperliche Fähigkeiten; es verlangt taktische Schärfe, psychologische Belastbarkeit und eine kompromisslose Arbeitsmoral, Eigenschaften, die weit über den Ring hinausgehen.">
+            For several years, I competed in amateur boxing at a high level. I participated in the Swiss Championship and the Deutsch-Tessiner Championship, representing team Boxgemeinschaft Ostschweiz, with whom I experienced the notable achievement of defeating team Vorarlberg from Austria at the Bodenseecup 2023. Boxing at a competitive level demands far more than physical ability; it requires tactical acuity, psychological resilience, and an uncompromising work ethic, qualities that extend far beyond the ring.
+          </p>
+          <p data-en="Today, I continue to train boxing primarily as a discipline and pursuit I genuinely love, and I also coach the youth boxing programme at BF Boxing Promotion in Klingnau, passing on the knowledge and passion that the sport has given me." data-de="Heute trainiere ich Boxen hauptsächlich als Disziplin und als etwas, das ich wirklich liebe, und ich coache ausserdem das Jugendboxprogramm bei BF Boxing Promotion in Klingnau, wo ich das Wissen und die Leidenschaft weitergebe, die mir der Sport gegeben hat.">
+            Today, I continue to train boxing primarily as a discipline and pursuit I genuinely love, and I also coach the youth boxing programme at BF Boxing Promotion in Klingnau, passing on the knowledge and passion that the sport has given me.
+          </p>
+          <div class="achievement-list">
+            <div class="achievement" data-de="Schweizer Meisterschaft" data-en="Swiss Championship">Swiss Championship</div>
+            <div class="achievement" data-de="Deutsch-Tessiner Meisterschaft" data-en="Deutsch-Tessiner Championship">Deutsch-Tessiner Championship</div>
+            <div class="achievement" data-de="Bodenseecup 2023 Sieger" data-en="Bodenseecup 2023 Winner">Bodenseecup 2023 Winner</div>
+            <div class="achievement" data-de="Jugendtrainer bei BF Boxing Promotion" data-en="Youth Coach at BF Boxing Promotion">Youth Coach at BF Boxing Promotion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE: CONTACT -->
+  <section class="page page-contact" id="contact">
+    <div class="section-inner contact-inner">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 data-de="Kontakt" data-en="Contact">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="contact-lead" data-en="Whether you have an interesting project in mind, a question, or simply want to connect, feel free to reach out. I am always open to meaningful conversations." data-de="Ob Sie ein interessantes Projekt im Sinn haben, eine Frage haben oder einfach in Kontakt treten möchten, zögern Sie nicht, mich zu kontaktieren. Ich bin stets offen für bedeutungsvolle Gespräche.">
+        Whether you have an interesting project in mind, a question, or simply want to connect, feel free to reach out. I am always open to meaningful conversations.
+      </p>
+      <div class="contact-cards">
+        <a class="contact-card" href="mailto:a.siino@hotmail.com">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 7l10 7 10-7"/></svg>
+          </div>
+          <div>
+            <p class="contact-card-label" data-de="E-Mail" data-en="Email">Email</p>
+            <p class="contact-card-value">a.siino@hotmail.com</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://www.linkedin.com/in/antonio-siino-485b9a411/" target="_blank" rel="noopener">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <p class="contact-card-label">LinkedIn</p>
+            <p class="contact-card-value">Antonio Siino</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://github.com/tonysiino22" target="_blank" rel="noopener">
+          <div class="contact-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.912.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.748-1.025 2.748-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.742 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </div>
+          <div>
+            <p class="contact-card-label">GitHub</p>
+            <p class="contact-card-value">tonysiino22</p>
+          </div>
+          <div class="contact-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2026 Antonio Siino</p>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
